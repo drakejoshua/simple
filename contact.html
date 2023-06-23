@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Simple</title>
+</head>
+<body>
+    <!-- the welcome message -->
+    <header>
+        <h1>Contact Us</h1>
+        <p>
+            If you're having any troubles or want to appreciate us, feel free to use the form below to send your message
+        </p>
+    </header>
+
+    <!-- the contact form -->
+    <form action="" target="_blank" method="POST" autocomplete="on">
+        <label for="name-input">Name:</label>
+        <input type="text" id="name-input">
+
+        <label for="email-input">Email:</label>
+        <input type="email" id="email-input">
+
+        <label for="telephone-input">Phone:</label>
+        <input type="tel" id="telephone-input">
+
+        <label for="issue-type"> issue type:</label>
+        <select name="issue" id="issue-type">
+            <option value="compliant" selected>complaint</option>
+            <option value="appreciation">appreciation</option>
+        </select>
+
+        <label for="message-input">Message:</label>
+        <textarea name="message" id="message-input" cols="30" rows="10">
+            your message?
+        </textarea>
+
+        <input type="submit" value="Send Complaint">
+        <input type="reset" value="Reset form">
+    </form>
+</body>
+</html>
