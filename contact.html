@@ -18,24 +18,22 @@
     <!-- the contact form -->
     <form action="" target="_blank" method="POST" autocomplete="on">
         <label for="name-input">Name:</label>
-        <input type="text" id="name-input">
+        <input type="text" id="name-input" placeholder="your name" required>
 
         <label for="email-input">Email:</label>
-        <input type="email" id="email-input">
+        <input type="email" id="email-input" placeholder="your email" required>
 
         <label for="telephone-input">Phone:</label>
-        <input type="tel" id="telephone-input">
+        <input type="tel" id="telephone-input" placeholder="your phone" required>
 
         <label for="issue-type"> issue type:</label>
-        <select name="issue" id="issue-type">
+        <select name="issue" id="issue-type" required>
             <option value="compliant" selected>complaint</option>
             <option value="appreciation">appreciation</option>
         </select>
 
         <label for="message-input">Message:</label>
-        <textarea name="message" id="message-input" cols="30" rows="10">
-            your message?
-        </textarea>
+        <textarea name="message" id="message-input" cols="30" rows="10" placeholder="your message" required></textarea>
 
         <input type="submit" value="Send Complaint">
         <input type="reset" value="Reset form">
