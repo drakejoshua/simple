@@ -33,6 +33,7 @@ nav a {
     font-size: 16px;
     color: black;
     font-weight: 600;
+    transition: border .5s;
 }
 nav a.active {
     border: none;
@@ -41,6 +42,10 @@ nav div {
     display: inline-grid;
     column-gap: 20px;
     grid-template-columns: auto auto auto; 
+}
+/* adding some hover interactions for the nav-links */
+nav a:hover {
+    border: none;
 }
 
 
@@ -81,11 +86,13 @@ header > div > button {
     background-color: transparent;
     border: medium solid black;
     font-size: 17px;
+    transition: color .5s, background-color .5s;
     margin-left: 0px; /* removing the margin as placed for the social icons */
 }
 header > div > a {
     text-decoration: none;
     color: black;
+    transition: opacity .5s;
 }
 header > div span {
     font-size: 25px;
@@ -103,6 +110,14 @@ main > div > span {
     font-size: 60px;
     text-align: center;
 }
+/* adding some hover interactions for the button and the social links */
+header > div > button:hover {
+    color: wheat;
+    background-color: black;
+}
+header > div > a:hover {
+    opacity: 0.6;
+}
 
 
 
@@ -118,7 +133,7 @@ section > * {
     width: 30%;
 }
 div.more > span {
-    font-size: 40px;
+    font-size: 40px; /* styling the icon */
 }
 div.more > h2 {
     font-size: 35px;
